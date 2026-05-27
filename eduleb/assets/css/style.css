@@ -204,19 +204,22 @@ width: 50px;
 /*END SCROLL TO TOP*/
 /*START BTN*/
 .btn_one {
-	background: #525fe1;
-	border: 1px solid #525fe1;
-	padding: 15px 30px;
-	border-radius: 2px;
+	background: #E87C1E;
+	border: 1px solid #E87C1E;
+	padding: 16px 32px;
+	border-radius: 22px;
 	color: #fff;
 	transition: 0.3s;
 	font-weight: 600;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
 }
 .btn_one i{margin-right:5px;}
 .btn_one:hover{
-background:#f26b65;
-color:#fff;
-border: 1px solid #f26b65;
+	background:#C96A16;
+	color:#fff;
+	border: 1px solid #C96A16;
 }
 @media only screen and (max-width:960px){
 .btn_one{
@@ -249,7 +252,9 @@ margin-top: 0px;
 	width: 20%;
 }
 .site-logo{
-	width: 150px;
+	width: 180px;
+	margin-left: -60px;
+	
 }
 .site-logo a{
 	display: block;
@@ -258,8 +263,9 @@ margin-top: 0px;
 	max-width: 100%;
 }
 #navigation{
-	padding: 20px 65px;
-	border-bottom: 1px solid #ddd;
+	padding: 25px 65px;
+	border-bottom: 1px solid #F1D9C5;
+	background: #FFF8F0;
 }
 .navigation2{
 	border-bottom: 0px !important;
@@ -270,7 +276,7 @@ margin-top: 0px;
 }
 .navbar-fixed {
     z-index: 999;
-    position: fixed;
+    position: static;
     opacity: .98;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
     width: 100%;
@@ -316,7 +322,13 @@ margin-top: 0px;
 #navigation .header-btn {
 	padding-right:20px;
 }
-
+#navigation .btn_one{
+	width: 150px;
+	height: 50px;
+	line-height: 32px;
+	font-size: 18px;
+	border-radius: 22px;
+}
 
 
 /*-------------------------------
@@ -438,11 +450,13 @@ top: 40px;
 }
 }
 .header-btn{
-	display: inline-block;
+	display: flex;
 	font-weight: 600;
 	font-size: 18px;
 	color: #0b104a;
 	transition: .5s;	
+	flex-direction: column;
+	align-items: center;
 }
 .header-btn:hover,
 .header-btn:focus{
@@ -474,11 +488,11 @@ top: 40px;
 .hero-text h1 span{color: #525fe1;}
 .hero-text h1 {
 	color: #0b104a;
-	font-size: 64px;
+	font-size: 48px;
 	font-weight: 700;
 	letter-spacing: 0;
-	line-height: 74px;
-	padding-top: 250px;
+	line-height: 58px;
+	padding-top: 190px;
 	margin-bottom: 20px;
 }
 @media only screen and (max-width:960px){
@@ -491,9 +505,9 @@ top: 40px;
 .hero-text h1 {padding-top:150px;font-size: 34px;line-height:44px;}
 }
 .hero-text p {
-	width:80%;
+	width:70%;
 	font-weight:500;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 /*SUBSCRIBE FIELD*/
 .banner_subs {
@@ -544,10 +558,15 @@ border: 1px solid #525fe1!important;
 /*END SUBSCRIBE FIELD*/
 .hero-text-img {
 	position: absolute;
-	bottom: 0;
-	right:5%;
+	bottom: 90px;
+	right:8%;
+	width:360px;
 }
-.hero-text-img img{position:relative;}
+.hero-text-img img{
+	position:relative;
+	width:100%;
+	border-radius:20px;
+}
 @media only screen and (max-width:960px) { 
 .hero-text-img img{display:none;}
 }
@@ -557,14 +576,12 @@ border: 1px solid #525fe1!important;
 /*HOME TWO BANNER CSS*/
 .hero-text2{position:relative;}
 .hero-text2 h1 span{color: #f26b65;}
-.hero-text2 h1 {
-	color: #fff;
-	font-size: 64px;
-	font-weight: 700;
-	letter-spacing: 0;
-	line-height: 74px;
-	padding-top: 250px;
-	margin-bottom: 20px;
+.hero-text h1{
+	color:#0b104a;
+	font-size:48px;
+	line-height:58px;
+	padding-top:190px;
+	margin-bottom:20px;
 }
 @media only screen and (max-width:960px){
 .hero-text2 h1 {padding-top:150px;font-size:64px;line-height:74px;}
@@ -655,15 +672,15 @@ border: 1px solid #525fe1!important;
 
 .home_ps {
 	background: #fff;
-	width: 250px;
-	padding: 20px;
-	border-radius: 5px;
+	width: 230px;
+	padding: 18px;
+	border-radius: 15px;
 	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 	position: absolute;
-	top: 45%;
-	right: 20%;
-	left: 60%;
-}	
+	top: 55%;
+	right: -20%;
+	left: auto;
+}
 @media only screen and (max-width:1024px){
 .home_ps {display:none;}
 }
@@ -699,7 +716,7 @@ color: #2D36BB;
 */
 .count_area {
 	position:relative;
-	margin-top: -60px;
+	margin-top: -30px;
 	padding-bottom:80px;
 }
 @media only screen and (max-width:960px) { 
@@ -1565,10 +1582,10 @@ position: relative;
 }
 .video-area2{position: relative;}
 .video-area {
-	padding: 250px 0;
+	height: 500px;
 	position: relative;
-	border-radius: 6px;
-	border: 15px solid #eef0ff;
+	border-radius: 20px;
+	overflow: hidden;
 	background: #fff;
 	box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
 }
@@ -2812,54 +2829,10 @@ body{
     --pati-cream:#FFF8F0;
 }
 
-/* Navbar */
-#navigation{
-    background:#FFF8F0 !important;
-    border-bottom:1px solid #F3D8B8;
-}
 
-#main-menu ul li a:hover{
-    color:#E67E22 !important;
-}
 
-/* Hero alanı */
-.home_bg{
-    background:linear-gradient(
-        rgba(255,248,240,.95),
-        rgba(255,243,230,.95)
-    ) !important;
-}
 
-/* Başlıklar */
-.section-title h2,
-.hero-text h1,
-.ab_content h2{
-    color:#8B4513 !important;
-}
 
-.hero-text h1 span{
-    color:#E67E22 !important;
-}
-
-/* Buton */
-.btn_one{
-    background:#E67E22 !important;
-    border:1px solid #E67E22 !important;
-    border-radius:12px;
-}
-
-.btn_one:hover{
-    background:#C96A16 !important;
-}
-
-/* Arama butonu */
-.home_sb button{
-    background:#E67E22 !important;
-}
-
-.home_sb button:hover{
-    background:#C96A16 !important;
-}
 
 /* Kartlar */
 .single_course,
@@ -2878,23 +2851,7 @@ body{
     transition:.3s;
 }
 
-/* Footer */
-.footer{
-    background:#F5E6D3 !important;
-}
 
-.foot_copy{
-    background:#E8D3BB !important;
-}
-
-/* İkon renkleri */
-.sc_one,
-.sc_two,
-.sc_three,
-.sc_four{
-    background:#FFF0E3 !important;
-    color:#E67E22 !important;
-}
 
 /* Logo */
 .site-logo h2{
@@ -2902,72 +2859,7 @@ body{
     font-weight:600;
 }
 
-/* PATILINK destek kartları düzenleme */
-
-.single_tp{
-    min-height: 280px;
-    padding: 30px 25px !important;
-    text-align: left;
-}
-
-.single_tp span{
-    float: none !important;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.single_tp h3{
-    font-size: 26px !important;
-    line-height: 32px !important;
-    margin-bottom: 15px;
-    word-break: normal !important;
-}
-
-.single_tp p{
-    font-size: 16px !important;
-    line-height: 28px !important;
-    margin-top: 10px !important;
-}
-.btn_one{
-    width:160px !important;
-    height:auto !important;
-    padding:18px 25px !important;
-
-    display:flex !important;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:15px !important;
-
-    font-size:24px !important;
-    white-space:nowrap;
-}
-/* Logo düzenleme */
-
-.navbar-brand img{
-width:180px !important;
-height:auto !important;
-margin-top:5px;
-}
-
-/* Buton düzenleme */
-
-.btn_one{
-width:180px !important;
-height:70px !important;
-
-font-size:20px !important;
-
-display:flex !important;
-align-items:center;
-justify-content:center;
-
-border-radius:20px !important;
-
-padding:0 !important;
-}
+/* Butonlar */
 
 .btn_one a{
 white-space:nowrap;
@@ -3007,4 +2899,18 @@ color:white;
 font-size:20px;
 line-height:35px;
 color:white;
+}
+.video-area video{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	filter:brightness(45%);
+}
+.login-text{
+	display:block;
+	text-align:center;
+	margin-bottom:6px;
+	font-size:17px;
+	font-weight:600;
+	color:#11185b;
 }
