@@ -260,7 +260,7 @@ margin-top: 0px;
 	display: block;
 }
 .site-logo img{
-	max-width: 100%;
+	width: 100%;
 }
 #navigation{
 	padding: 25px 65px;
@@ -813,17 +813,13 @@ margin-top:25px;
 * 06.START ABOUT DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.ab_img{position:relative;}
-@media only screen and (max-width:960px) { 
-.ab_img{margin-bottom:60px;}
+.ab_img{
+    position:relative;
 }
-.ab_img img{position:relative;}
-.ab_content{margin-bottom:30px;}
-.ab_content h2 {
-	font-weight: 600;
-	line-height: 50px;
-	font-size: 38px;
-	margin-bottom: 20px;
+
+.ab_img img{
+    width:100%;
+    border-radius:20px;
 }
 .ab_content p{margin-bottom:15px;}
 .ab_content ul{margin-bottom: 40px;}
@@ -836,17 +832,11 @@ color: #0b104a;
 color:#525fe1;
 margin-right:10px;
 }
-.home_ps2 {
-	background: #fff;
-	width: 250px;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	position: absolute;
-	top: 45%;
-	right: 0%;
-	/* left: 70%; */
-}	
+.home_ps2{
+    position:absolute;
+    right:0;
+    bottom:30px;
+}
 .home_ps2 span {
 color: #2D36BB;
 	background: #ECEDFF;
@@ -884,13 +874,17 @@ color: #2D36BB;
 	transition: all 0.25s ease-out;
 	transition: 0.3s;
 }
-.cat_list ul li a img {
-	width: 45px;
-	margin-right: 10px;
-	height: 45px;
-	border-radius: 100px;
-	border: 4px solid #ECEDFF;
-	background: #fff;
+.cat_list ul li a i {
+	width:45px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	border-radius:100px;
+	border:4px solid #FFE7D4;
+	background:#FFF8F0;
+	color:#E87C1E;
+	margin-right:10px;
+	font-size:20px;
 }
 .cat_list ul li:hover{background:#525fe1;}
 .cat_list ul li a:hover{color:#fff;}
@@ -952,10 +946,14 @@ transition: all 0.25s ease-out;
 	box-shadow:10px 15px 18px rgba(23, 23, 36, 0.03);
 	margin-bottom: 30px;
 	text-align:center;
+	min-height: 520px;
+	overflow: hidden;
 }
 .single_c_img{margin-bottom:20px;position: relative;}
 .single_c_img img {
 	width: 100%;
+	height: 300px;
+	object-fit: cover;
 	position: relative;
 }
 .single_c_img span {
@@ -2913,4 +2911,31 @@ color:white;
 	font-size:17px;
 	font-weight:600;
 	color:#11185b;
+}
+.about-photo{
+	width:100%;
+	max-width:500px;
+	border-radius:20px;
+	margin-left:50px;
+	object-fit:cover;
+	box-shadow:0px 0px 25px rgba(0,0,0,0.08);
+}
+.partner_text{
+	font-size:24px;
+	font-weight:700;
+	color:#0B0F5C;
+	text-align:center;
+	padding:20px;
+}
+.single_team{
+    min-height: 520px;
+    transition:0.3s;
+}
+
+.single_team:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.footer-logo img{
+    width: 260px;
 }
