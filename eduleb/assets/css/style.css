@@ -2939,3 +2939,575 @@ color:white;
 .footer-logo img{
     width: 260px;
 }
+.single_footer img {
+    max-width: 180px;
+    height: auto;
+}
+
+.footer {
+    padding-bottom: 40px;
+}
+
+.foot_copy {
+    padding: 20px 0;
+}
+
+.profile-list{
+    list-style:none;
+    padding-left: 25px;
+	text-align: left;
+    margin-top:20px;
+}
+
+.profile-list li{
+    padding:10px 0;
+    border-bottom:1px solid #f1e5dc;
+    font-size:16px;
+    color:#555;
+}
+
+.profile-list li:last-child{
+    border-bottom:none;
+}
+.single_course{
+    min-height:360px;
+    padding:35px 30px 25px;
+    border:2px solid #ffe2c2;
+    background:#fffdf9;
+    border-radius:24px;
+}
+.single_course h4{
+    margin-top:10px;
+    margin-bottom:18px;
+}
+
+.profile-status span,
+.price{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:20px;
+    background:#fff1e5;
+    color:#e87c1e;
+    font-weight:700;
+	margin-bottom: 18px;
+}
+/* Patilink nedir sayfası */
+.patilink-detail {
+  background: #fff7ef;
+}
+
+.main-about-img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.about-text-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+}
+
+.about-text-box h3 {
+  color: #07104f;
+  margin-bottom: 15px;
+}
+
+.about-text-box p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4f5b5f;
+}
+
+.process-title {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.process-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+  margin-top: 35px;
+}
+
+.process-box {
+  width: 210px;
+  min-height: 220px;
+  background: #fff;
+  padding: 25px 18px;
+  border-radius: 24px;
+  text-align: center;
+  border: 2px solid #ffd9ae;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.process-box img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.process-box h4 {
+  color: #07104f;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.process-box p {
+  color: #4f5b5f;
+  font-size: 16px;
+}
+
+.process-arrow {
+  font-size: 34px;
+  color: #f47b20;
+  font-weight: bold;
+}
+
+.gallery-area {
+  margin-top: 90px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-top: 25px;
+}
+
+.feature-area {
+  margin-top: 80px;
+}
+
+.feature-card {
+  background: #fff;
+  min-height: 230px;
+  padding: 35px 25px;
+  border-radius: 24px;
+  text-align: center;
+  border: 2px solid #ffd9ae;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.feature-card h4 {
+  color: #07104f;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #4f5b5f;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/*MAMA KUMBARASI*/
+.body {
+  background: #fff7ef;
+}
+
+.mama-section {
+  padding: 90px 0;
+  background: #fff7ef;
+}
+
+.section-title h2 {
+  color: #07104f;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.section-title p {
+  color: #4f5b5f;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.donation-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  padding: 65px 35px;
+  border-radius: 30px;
+  text-align: center;
+  background: #fff;
+  border: 3px solid #ffd9ae;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.07);
+  margin-bottom: 30px;
+  transition: .3s;
+}
+
+.donation-card.active {
+  border-color: #f47b20;
+}
+
+.donation-card:hover {
+  transform: translateY(-8px);
+  border-color: #f47b20;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.donation-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.72);
+  z-index: 1;
+}
+
+.donation-card *:not(.bg-img) {
+  position: relative;
+  z-index: 2;
+}
+
+.donation-badge {
+  display: inline-block;
+  background: #fff0df;
+  color: #f47b20;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 45px;
+}
+
+.donation-card h3 {
+  color: #07104f;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.donation-card p {
+  color: #4f5b5f;
+  font-size: 20px;
+  line-height: 1.7;
+  min-height: 95px;
+  margin-bottom: 30px;
+}
+
+.donation-card small {
+  display: block;
+  color: #07104f;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 38px;
+}
+
+.main_btn {
+  display: inline-block;
+  background: #f47b20;
+  color: #fff !important;
+  padding: 15px 38px;
+  border-radius: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.main_btn:hover {
+  background: #f47b20 !important;
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(244,123,32,.25);
+}
+/*GOREV MERKEZİ*/
+body {
+  background: #fff7ef;
+}
+
+.gorev-section {
+  padding: 90px 0;
+  background: #fff7ef;
+}
+
+.section-title h2 {
+  color: #07104f;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.section-title p {
+  color: #4f5b5f;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.task-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  padding: 55px 35px;
+  border-radius: 30px;
+  text-align: center;
+  background: #fff;
+  border: 3px solid #ffd9ae;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.07);
+  margin-bottom: 30px;
+  transition: .3s;
+}
+
+.task-card:hover {
+  transform: translateY(-8px);
+  border-color: #f47b20;
+}
+
+.task-card.active {
+  border-color: #f47b20;
+}
+
+.task-card.urgent {
+  border-color: #ffd9ae;
+}
+
+.task-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+  z-index: 1;
+}
+
+.task-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.58);
+  z-index: 1;
+}
+
+.task-card *:not(.task-bg-img) {
+  position: relative;
+  z-index: 2;
+}
+
+.task-badge {
+  display: inline-block;
+  background: #fff0df;
+  color: #f47b20;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.urgent-badge {
+  background: #ffe9e9;
+  color: #ef5b5b;
+}
+
+.task-card h3 {
+  color: #07104f;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.task-card p {
+  color: #4f5b5f;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.task-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px;
+}
+
+.task-card ul li {
+  color: #4f5b5f;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.task-card ul li::before {
+  content: "✓";
+  color: #f47b20;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.task-btn {
+  display: inline-block;
+  background: #f47b20;
+  color: #fff !important;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.task-btn:hover {
+  background: #f47b20;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(244,123,32,.25);
+}
+
+@media (max-width: 991px) {
+  .task-card {
+    min-height: auto;
+  }
+}
+/*İLAN VER SAYFASI*/
+body {
+  background: #fff7ef;
+}
+
+.ilan-section {
+  padding: 90px 0;
+  background: #fff7ef;
+}
+
+.section-title h2 {
+  color: #07104f;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.section-title p {
+  color: #4f5b5f;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.ilan-form-card {
+  background: #fff;
+  padding: 45px;
+  border-radius: 30px;
+  border: 3px solid #ffd9ae;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.07);
+}
+
+.ilan-form-card h3 {
+  color: #07104f;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.ilan-form-card input,
+.ilan-form-card select,
+.ilan-form-card textarea {
+  width: 100%;
+  border: 2px solid #ffe0bd;
+  border-radius: 18px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #4f5b5f;
+  outline: none;
+  background: #fff;
+}
+
+.ilan-form-card textarea {
+  height: 160px;
+  resize: none;
+}
+
+.ilan-form-card input:focus,
+.ilan-form-card select:focus,
+.ilan-form-card textarea:focus {
+  border-color: #f47b20;
+}
+
+.file-label {
+  color: #07104f;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.ilan-form-card button {
+  background: #f47b20;
+  color: #fff;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+.ilan-form-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(244,123,32,.25);
+}
+
+.info-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 30px;
+  border: 3px solid #ffd9ae;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.07);
+}
+
+.info-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 25px;
+}
+
+.info-card h3 {
+  color: #07104f;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: #4f5b5f;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.info-card ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.info-card ul li {
+  color: #4f5b5f;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.info-card ul li::before {
+  content: "✓";
+  color: #f47b20;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+@media (max-width: 991px) {
+  .info-card {
+    margin-top: 30px;
+  }
+}
